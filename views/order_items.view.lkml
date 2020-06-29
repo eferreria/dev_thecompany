@@ -60,6 +60,12 @@ view: order_items {
     drill_fields: [detail*]
   }
 
+  measure: total_profit {
+    label: "Total Profit"
+    type: sum
+    sql: ${sale_price}-${inventory_items.cost} ;;
+  }
+
   parameter: kpi_selector {
     type: string
     allowed_value: {
