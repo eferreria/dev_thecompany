@@ -7,7 +7,7 @@ connection: "thelook_events"
 
 #editing this for LaL
 
-include: "*.view"
+include: "/views/*.view"
 # include: "*.dashboard"
 
 datagroup: devthecompany_default_datagroup {

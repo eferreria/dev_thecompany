@@ -1,7 +1,7 @@
 connection: "thelook_events"
 
-include: "Operational_Metrics/om*.view.lkml"                       # include all views in this project
-include: "om*.dashboard"
+include: "/views/Operational_Metrics/om*.view.lkml"                       # include all views in this project
+include: "/dashboards/om*.dashboard"
 
 fiscal_month_offset: -3
 
