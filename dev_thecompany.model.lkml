@@ -15,6 +15,14 @@ datagroup: devthecompany_default_datagroup {
   max_cache_age: "2 hour"
 }
 
+
+datagroup: devthecompany_default_datagroup90s {
+  # sql_trigger: SELECT MAX(id) FROM etl_log;;
+  max_cache_age: "2 hour"
+}
+
+
+
 datagroup: default {
   sql_trigger: select extract(h from current_time) ;;
   max_cache_age: "1 hours"
